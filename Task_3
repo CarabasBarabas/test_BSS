@@ -1,0 +1,12 @@
+import json
+import requests
+
+file_url = input('Введите ссылку на файл: ')
+
+response = requests.get(file_url)
+
+if response.status_code == 200:
+    data = response.json()
+    print(data)
+else:
+    print('Ошибка при загрузке файла')

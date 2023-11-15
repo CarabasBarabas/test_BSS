@@ -1,0 +1,5 @@
+x,y = input('Введите число:').split('.')
+if x.isalpha() or y.isalpha():
+    print("Введите число с точкой")
+else:
+    print(f' {x} рублей {y} копеек')
